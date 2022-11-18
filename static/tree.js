@@ -83,6 +83,7 @@ function rootNode() {
 
 
     // detect if the text contains link and add hypertext reference to the link
+    // WE WANT TO BE ABLE TO POPULATE TREE NOT LINK EXTERNAL TREE
     let s_len = s.search("https");
     let link = s.substring(s_len, s.length);
     if(s.includes("DOCUMENT") || s.includes("DECISIONTREE")) {
